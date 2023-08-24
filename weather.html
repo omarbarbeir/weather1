@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./weather.css">
+    <link rel="stylesheet" href="./output.css">
+    <title>Weather</title>
+</head>
+<body class="dark bg-slate-800 dark:bg-black">
+    
+
+    <div id="card" class=" w-2/3  md:w-2/3 flex-col">
+        <div id="search" class="flex justify-around items-center w-full">
+            <input id="searchinput" type="text" placeholder="Enter City Name" class="italic font-bold text-blue-950 dark:text-white w-1/2 md:w-2/3 p-4 md:p-6">
+            <i id="searchbtn" class="fa-solid fa-magnifying-glass w-16 h-16 md:w-20 md:h-20"></i>
+        </div>
+
+        <div id="weather" class="flex justify-center items-center flex-col">
+            <img id="icon" src="./rain.png" class="mt-7">
+            <h2 id="temp" class="italic font-bold text-blue-950 dark:text-white"></h2>
+            <h1 id="city" class="italic font-bold text-blue-950 dark:text-white"></h1>
+
+
+            <div id="info">
+                <div id="humiditye">
+                    <img src="./hu.png">
+                    <div id="humidity">
+                        <p class=""italic font-bold text-blue-950 dark:text-white""></p>
+                    </div>
+                </div>
+
+                <div id="winde">
+                    <img src="./wind.png">
+                        <div id="wind">
+                            <p class="italic font-bold text-blue-950 dark:text-white"></p>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<script src="./weather.js"></script>
+<script src="https://kit.fontawesome.com/41a38439e1.js" crossorigin="anonymous"></script>
+</body>
+</html>

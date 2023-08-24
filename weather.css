@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barriecito&display=swap');
+
+body{
+    height: 100vh;
+    overflow-x: hidden;
+}
+#card{
+    position: absolute;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:90%;
+    /* max-width: 470px; */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:40px 36px;
+    background: linear-gradient(to right bottom,rgb(1, 136, 136),pink);
+}
+#search input{
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-shadow: 0 0 5px black;
+    font-size: 30px;
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 1px;
+}
+#search input::placeholder{
+    color:white;
+}
+#searchbtn{
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+#searchbtn:hover{
+    box-shadow: 0 0 7px white;
+}
+
+#weather{
+    display: none;
+    text-align: center;
+}
+#weather #icon{
+    margin-left: 145px;
+}
+#weather img{
+    width:220px;
+    height: 220px;
+}
+#weather h2{
+    font-size: 33px;
+    font-family: 'Acme', sans-serif;
+    margin-top:10px
+}
+#weather h1{
+    font-size: 35px;
+    font-family: 'Acme', sans-serif;
+    margin-top:5px
+}
+#info{
+    width:500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#humiditye{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#humiditye img{
+    width:45px;
+    height: 45px;
+}
+#winde{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#winde img{
+    width:45px;
+    height: 45px;
+}
+#humidity{
+    font-size: 22px;
+    text-align: center;
+}
+#wind{
+    font-size: 22px;
+    text-align: center;
+}
